@@ -55,12 +55,9 @@ const TicketDetailsPage: React.FC = () => {
   const totalPaid = booking.fare + booking.flexiFee;
   const canUseFlexi = booking.flexiPurchased && booking.status === 'Active';
 
-  const handleResellConfirm = async () => {
+  const handleResellConfirm = () => {
     setProcessing(true);
-    
-    // Simulate payment processing for ₹75 fee
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     updateBookingStatus(booking.id, 'Reselled');
     setProcessing(false);
     setShowModal(null);
@@ -140,11 +137,6 @@ const TicketDetailsPage: React.FC = () => {
               </ul>
             </div>
 
-            <div className="flex items-center justify-between p-4 bg-warning/10 rounded-xl mb-6">
-              <span className="text-sm text-foreground">ReSell Processing Fee</span>
-              <span className="font-bold text-lg text-foreground">₹75</span>
-            </div>
-
             <Button
               onClick={handleResellConfirm}
               variant="gradient"
@@ -160,7 +152,7 @@ const TicketDetailsPage: React.FC = () => {
               ) : (
                 <>
                   <ShoppingCart className="w-5 h-5" />
-                  Pay ₹75 & List for ReSale
+                  List for Resale
                 </>
               )}
             </Button>
