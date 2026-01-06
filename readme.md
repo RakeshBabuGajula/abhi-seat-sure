@@ -1,6 +1,9 @@
 # 🚌 Abhi’s SeatSure  
 ### Smart, Flexible & Reliable Bus Ticket Booking Platform
 
+<img width="1536" height="1024" alt="SeatSure Thumbnail" src="https://github.com/user-attachments/assets/efc5c3c8-98ef-4587-97b3-06cd4a63436a" />
+
+
 Abhi’s SeatSure is a next-generation bus ticket booking system inspired by **AbhiBus**, designed to solve one of the biggest real-world travel problems — **lack of flexibility after booking**.
 
 This project introduces a **Flexi Ticket** concept that allows passengers to **ReBook or ReSell** their tickets instead of losing money due to cancellations.
